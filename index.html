@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuota UCLV</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h3 class="text-primary" id="title">Cuota UCLV</h3>
+
+		<div class="form-group">
+	        <select class="form-control" id="user-list">
+		        
+		    </select>
+	    </div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				Cuota:
+			</div>
+			<div id="cuota" class="col-xs-3">
+				0.00Mb
+			</div>
+			<div class="col-xs-3 text-center">
+				%
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				Consumido:
+			</div>
+			<div class="col-xs-3">
+				<span class="bg-success" id="consumido-cuota">0.00Mb</span>
+			</div>
+			<div class="col-xs-3">
+				<span class="bg-success" id="consumido-cuota-percent">0.00%</span>
+			</div>		
+		</div>
+
+		<hr/>
+
+		<div class="row">
+			<div class="col-xs-6">
+				Cuota (4 ciclos):
+			</div>
+			<div id="cuotaMes" class="col-xs-3">
+				0.00Mb
+			</div>
+			<div class="col-xs-3 text-center">
+				%
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				Consumido:
+			</div>
+			<div class="col-xs-3">
+				<span class="bg-danger" id="consumido-ciclo">0.00Mb</span>
+			</div>
+			<div class="col-xs-3">
+				<span class="bg-danger" id="consumido-ciclo-percent">0.00%</span>
+			</div>
+		</div>
+		<br>
+		<button id="options-button" href="options.html"  class="btn btn-primary btn-block"><i class="glyphicon glyphicon-edit"></i> Opciones</button>
+		<br>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/definitions.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

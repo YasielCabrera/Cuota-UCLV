@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cuota UCLV - Opciones</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<style type="text/css">
+		.border{
+			border: solid #000 1px;		
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center text-primary">Cuota UCLV</h1>	
+		
+		
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#about-tab">About</a></li>
+		    <li><a data-toggle="tab" href="#options-tab">Opciones</a></li>
+		    <li><a data-toggle="tab" href="#users-tab">Usuarios</a></li>
+		    
+	    </ul>
+
+	    <div class="tab-content">
+	    	<div id="about-tab" class="tab-pane fade in active">
+	    	<br><br>
+		      	<div class="jumbotron">
+				    <h1 class="text-center">Cuota UCLV</h1> 
+				    <p class="text-center">Extensión para conocer el estado de la cuota de navegación de los usuarios de la red UCLV</p> 
+
+				    <div class="row text-center">
+				    	<div class="col-md-4">
+				    		<h2>Autor</h2>
+				    		<h3><a href="mailto:ycalonso@uclv.cu">Yasiel Cabrera Alonso</a></h3>
+				    	</div>
+				    	<div class="col-md-4">
+				    		<h2>Version</h2>
+				    		<h3>1.0.0 Beta</h3>
+				    	</div>
+				    	<div class="col-md-4">
+				    		<h2>Build Date</h2>
+				    		<h3>20/enero/2018</h3>
+				    	</div>
+				    </div>
+				    <br>
+
+				    <div class="text-center">
+
+				    	<h3>Copyright 2017-2018 - All rights reserved.</h3>
+				    	<h4>Cuota UCLV es <a href="https://www.gnu.org/philosophy/free-sw.es.html">Software Libre</a>
+				    	bajo licencia <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
+				    	version 3 o superior
+				    	</h4>
+				    </div>				    
+			    </div>
+
+
+		    </div>
+		    <div id="options-tab" class="tab-pane fade">
+		        <h3>OPCIONES</h3>
+		        <hr>
+		        <div>
+			        <div class="checkbox">
+					    <label><input id="allow-notifications" type="checkbox" value="">Permitir notificaciones</label>
+					</div>
+					<div id="consumo-interval-wraper" class="form-group hidden" style="padding-left:50px;">
+					    <label for="consumo-interval">Notificarme cada:</label>
+					    <select class="form-control" id="consumo-interval">
+						    <option value="5">5 Mb consumidos</option>
+						    <option value="10">10 Mb consumidos</option>
+						    <option value="20">20 Mb consumidos</option>
+						    <option value="30">30 Mb consumidos</option>
+						    <option value="40">40 Mb consumidos</option>
+						    <option value="50">50 Mb consumidos</option>
+						    <option value="80">80 Mb consumidos</option>
+						    <option value="100">100 Mb consumidos</option>
+						    <option value="150">150 Mb consumidos</option>
+						    <option value="200">200 Mb consumidos</option>
+					    </select>
+					</div>
+
+					<div class="checkbox">
+					    <label><input id="notif-left" type="checkbox" value="">Notificarme cuando me quede solo el 15% de mi cuota</label>
+					</div>
+
+					<div class="form-group">
+					    <label for="update-interval">Intervalo de actualización</label>
+					    <select class="form-control" id="update-interval">
+						    <option>5 Segundos</option>
+						    <option>10 Segundos</option>
+						    <option>15 Segundos</option>
+						    <option>20 Segundos</option>
+						    <option>25 Segundos</option>
+						    <option>30 Segundos</option>
+					    </select>
+					</div>
+		        </div>
+		     	<br>
+		      	<button id="restore-option" class="btn btn-primary"><i class="glyphicon glyphicon-hand-left"></i> Restaurar a valores por defecto</button>
+		    </div>
+		    <div id="users-tab" class="tab-pane fade">
+		        <h3>USUARIOS</h3>
+		        <hr>
+				
+		        <form class="form-inline" role="form">
+			        <div class="form-group">
+				        <input type="text" class="form-control" id="new_user_text" placeholder="Usuario">
+		   	        </div>
+		   	        <button id="new_user_button" class="btn btn-primary"><i class="glyphicon glyphicon-asterisk"></i> Agregar</button><br><br>
+	   	        </form>
+
+		        <table id="user-table" class="table table-striped">
+					<tr>
+					    <th width="5%">Activo</th>
+					    <th>Usuario</th>
+					    <th width="5%">Eliminar</th>
+					</tr>
+
+				</table>
+
+		    </div>
+		    
+	    </div>
+	</div>
+
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/definitions.js"></script>
+	<script type="text/javascript" src="assets/js/options.js"></script>
+</body>
+</html>
